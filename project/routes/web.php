@@ -14,6 +14,9 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-
-
+//lesson 1: Routing
+//1.1 basic routing (default)
+Route::get('/default',function(){
+    return "hello world";
+});
 Route::get('/blog',[PostsController::class,'index']);
